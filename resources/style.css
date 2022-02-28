@@ -63,9 +63,36 @@ h3 {
 
 blockquote {
   font-family: 'Cinzel', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.5rem;
 }
 
+button {
+  background-color: #1D1;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  border: 2px solid #12dd23;
+  width: 100px;
+  height: 40px;
+  font-size: .8rem;
+}
+
+button:hover {
+  background-color: #0c960c;
+  border: darkgreen;
+  transition: background-color .15s, font-size .15s;
+}
+
+button:active {
+  border-color: #fff;
+}
+
+
 /* classes */
+
+.btn {
+  position: relative;
+  top: 3px;
+}
 
 .center {
   justify-content: center;
@@ -85,6 +112,9 @@ blockquote {
   gap: 40px;
 }
 
+.emailLabel {
+  font-size: 1.2rem;
+}
 
 .flex {
   display: flex;
@@ -95,7 +125,6 @@ blockquote {
   min-height: 100vmin;
   max-height: 100%
 }
-
 
 .marginAuto {
   margin: auto;
@@ -122,6 +151,10 @@ blockquote {
 
 .top {
   justify-content: top;
+}
+
+.signUp {
+  align-items: center;
 }
 
 .squareImg {
@@ -213,32 +246,10 @@ main {
   right: 0;
 }
 
-.desktopForm input {
+input {
   width: 300px;
-  height: 45px;
-}
-.desktopForm button {
-  background-color: #1D1;
-  color: #fff;
-  text-shadow: 1px 1px black;
-  border: 2px solid #12dd23;
-  width: 100px;
   height: 40px;
-  font-size: .8rem;
 }
-#emailLabel {
-  font-size: 1.2rem;
-}
-button:hover {
-  background-color: #0c960c;
-  border: darkgreen;
-  transition: background-color .15s, font-size .15s;
-}
-
-button:active {
-  border-color: #fff;
-}
-
 
 /* about */
 
@@ -282,6 +293,10 @@ button:active {
 #testimonial {
   background-color: var(--blue);
   color: whitesmoke
+}
+
+#testimonial figcaption {
+  font-style: italic;
 }
 
 /* partners */

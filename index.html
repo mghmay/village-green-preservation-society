@@ -30,10 +30,10 @@
     <section id = "hero" class = "fullscreen flex column center">
       <h3>We are</h3>
       <h1>The Village Green Preservation Society</h1>
-      <div class = "desktopForm textAlign">
+      <div class = "desktopForm textAlign flex container signUp">
         <h3>Join us today!</h3>
         <form>
-          <label id="emailLabel" for "email">
+          <label class="emailLabel" for "email">
             Email address:
           </label>
           <input
@@ -46,7 +46,9 @@
           />
           <button
           type="submit"
-          id="submit">
+          id="submit"
+          class = "btn"
+          >
             Join
           </button>
         </form>
@@ -98,9 +100,9 @@
     fullscreen center paddingY">
       <figure>
         <blockquote>
-        <p>I used to be skeptical about the Village Green Society but since I became a member and started tasting Mrs. Baker's pies. I can't stop! Now I make sure to attend every event!</p>
+        i used to be skeptical about the village green society but since i became a member and started tasting mrs. baker's pies. i can't stop! now I make sure to attend every event!  
         </blockquote>
-        <figcaption> - A new convert!</figcaption>
+        <figcaption> - A new convert</figcaption>
       </figure>
     </section>
     <section id = "partners" class = "fullscreen flex container column">
@@ -118,23 +120,25 @@
         <figure class = "squareImg">
           <img src = "resources/images/carbootsale.jpg" alt = "One of our incredible car boot sales">
         </figure>
-        <div class = "flex container row paddingY">
+        <div  class = "flex container paddingY signUp">
           <h3>So come and join the fun! What are you waiting for!</h3>
           <form>
-            <label id="emailLabel" for "email">
+            <label class="emailLabel" for "email">
               Email address:
             </label>
             <input
             type="email"
             name="email"
             id="email"
-            class="form-control"
+            class="form-control "
             placeholder="Enter your email address here"
             required
             />
             <button
             type="submit"
-            id="submit">
+            id="submit"
+            class = "btn"
+            >
               Join us!
             </button>
           </form>
