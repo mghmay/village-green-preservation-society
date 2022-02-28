@@ -1,5 +1,7 @@
 /*General style*/
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lobster&family=Noticia+Text:wght@400;700&family=Playball&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,7 +21,7 @@ html {
 }
 
 body {
-  /* font-family: ; */
+  font-family: 'Noticia Text', Georgia, 'Times New Roman', Times, serif;
   width: 100%;
   font-weight: 400;
   text-align: center;
@@ -41,15 +43,14 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-h2,
-h3 {
-  font-weight: 700;
-}
-
 h1 {
+  font-family: 'Lobster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: .2rem;
   font-size: 2.5rem;
+}
+h2,
+h3 {
+  font-family: 'playball', Georgia, 'Times New Roman', Times, serif;
 }
 
 h2 {
@@ -60,11 +61,11 @@ h3 {
   font-size: 1.5rem;
 }
 
-/* classes */
-
-.card {
-  width: 330px;
+blockquote {
+  font-family: 'Cinzel', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+/* classes */
 
 .center {
   justify-content: center;
@@ -80,8 +81,8 @@ h3 {
   justify-content: center;
   align-content: center;
   justify-items: center;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 
@@ -108,8 +109,11 @@ h3 {
   margin: 0 30px;
 }
 
-.padding {
-  padding: 30px;
+.paddingX {
+  padding: 30px 0;
+}
+.paddingY {
+  padding: 0 30px;
 }
 
 .textCenter {
@@ -121,7 +125,7 @@ h3 {
 }
 
 .squareImg {
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 
@@ -194,6 +198,13 @@ main {
   z-index: -1;
 }
 
+#hero div {
+  width: 100%;
+  background-color: var(--green);
+  padding: 10px;
+}
+
+
 .desktopForm {
   position: absolute;
   bottom: 20px;
@@ -201,6 +212,33 @@ main {
   left: 0;
   right: 0;
 }
+
+.desktopForm input {
+  width: 300px;
+  height: 45px;
+}
+.desktopForm button {
+  background-color: #1D1;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  border: 2px solid #12dd23;
+  width: 100px;
+  height: 40px;
+  font-size: .8rem;
+}
+#emailLabel {
+  font-size: 1.2rem;
+}
+button:hover {
+  background-color: #0c960c;
+  border: darkgreen;
+  transition: background-color .15s, font-size .15s;
+}
+
+button:active {
+  border-color: #fff;
+}
+
 
 /* about */
 
@@ -212,30 +250,59 @@ main {
 
 #events {
   background-color: var(--yellow);
+  padding: 30px 0;
 }
+
 
 #events h2 {
   background-color: var(--yellow);
 }
+#events .container {
+  align-items: stretch;
+  align-content: center;
+}
 #events .card{
   text-align: left;
+  border: solid 2px var(--orange);
+  background-color: var(--pink);
+  padding: 10px;
+  min-width: 250px;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card span {
+  font-weight: 700;
 }
 
 /* testimonial */
 
 #testimonial {
-  background-color: var(--pink);
+  background-color: var(--blue);
+  color: whitesmoke
 }
 
 /* partners */
 
 #partners {
+  background-image: url(./images/pieShop.jpg);
+  color: whitesmoke;
+  background-size: cover;
+  align-items: center;
+}
+
+
+#partners h3,
+#partners p {
   background-color: var(--orange);
+  padding: 10px;
 }
 /* fun */
 
 #fun {
-  background-color: var(--blue);
+  background-color: var(--pink);
 }
 /* footer */
 
