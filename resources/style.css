@@ -153,10 +153,6 @@ button:active {
   justify-content: top;
 }
 
-.signUp {
-  align-items: center;
-}
-
 .squareImg {
   width: 250px;
   height: auto;
@@ -199,22 +195,25 @@ header li {
 
 header li a {
   display: inline-block;
-  padding: 0.5rem 22px;
+  padding: 0.4rem 22px;
   height: 100%;
-  /*font-family: ;
-  color: ;
-  font-size: ; */
   margin: auto;
-  transition: 0.1s
+  transition: 0.1s;
 }
 
-/* header li a:hover {
-   background-color: ; 
-} */
+header li a:hover {
+   background-color: lightgreen; 
+}
 
 .mobileJoin {
   display: none;
 }
+
+
+/*.signUp {
+  align-items: center;
+} */
+
 
 /* main */
 
@@ -231,16 +230,15 @@ main {
   z-index: -1;
 }
 
-#hero div {
+#banner {
   width: 100%;
   background-color: var(--green);
-  padding: 10px;
 }
 
 
-.desktopForm {
+#banner {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -314,9 +312,9 @@ input {
   background-color: var(--orange);
   padding: 10px;
 }
-/* fun */
+/* Sign up section */
 
-#fun {
+#signUp {
   background-color: var(--pink);
 }
 /* footer */
@@ -326,4 +324,99 @@ footer {
   text-align: left;
   padding-left: 5px;
 }
+
+@media only screen and (max-width: 876px) {
+  html {
+    font-size: 20px;
+  }
+
+  /* hero */
+
+  #banner {
+    display: block;
+    position: relative;
+    bottom: 0;
+    top: 100px;
+    padding: 10px;
+  }
+
+  /* fun section */
+
+  #signUp .squareImg {
+    width: 200px;
+    height: auto;
+  }
+
+  #signUp .squareImg img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+  @media only screen and (max-width: 876px) {
+  /* images */
+    .additional {
+      display: none;
+  }  
+  
+  /* header */
+
+  .mobileJoin {
+    display: inline-block;
+    margin: auto 5px auto auto;
+  }
+
+  /* hero */
+
+  #banner {
+    display: none;
+  }
+
+  /* sign up section */
+
+}
+
+@media only screen and (max-width: 876px) { 
+  html {
+    font-size: 16px;
+  }
+
+  /* header */
+  nav li {
+    margin: 0 auto;
+  }
+
+  nav li a {
+    padding-top: 0.8rem
+  }
+}
+
+@media only screen and (max-width: 530px) { 
+  /* about */
+  #about .squareImg {
+    width: 350px;
+    height: auto;
+  }
+
+  #about .squareImg img {
+    width: 350px;
+    height: 350px;
+  }
+
+  /* events */
+
+  #events .card {
+    max-width: 95%;
+  }
+
+}
+
+@media only screen and (max-width: 530px) { 
+  /*sign up section */
+  .mobileAdditional {
+    display: none;
+  }
+}
+
+
 
